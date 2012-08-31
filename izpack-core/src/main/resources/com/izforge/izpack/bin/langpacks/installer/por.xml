@@ -47,6 +47,7 @@
     <str id="installer.step" txt="Passo"/>
     <str id="installer.of" txt="de"/>
     <str id="installer.Message" txt="Menssagem"/>
+    <str id="installer.uninstall.writefailed" txt="Não foi possível escrever as informações de desinstalação."/>
 
     <!-- Uninstaller specific strings -->
     <str id="uninstaller.warning" txt="Isto removerá o(s) aplicativo(s) instalado(s) !"/>
@@ -88,7 +89,9 @@
          txt="Este arquivo não é um diretório! Por favor, selecione um diretório!"/>
     <str id="TargetPanel.notwritable"
          txt="Este diretório não pode ser escrito! Por favor, escolha outro diretório!"/>
-
+	<str id="TargetPanel.incompatibleInstallation"
+         txt="Este software não pode ser instalado no diretório selecionado, é necessário desinstalar ou selecionar outro caminho."/>
+         
     <str id="JDKPathPanel.extendedIntro"
          txt="O programa instalado necessita um JDK com versão entre ${JDKPathPanel.minVersion} e ${JDKPathPanel.maxVersion}. Um &quot;Java Runtime Environment&quot; (JRE) não é suficiente."/>
     <str id="JDKPathPanel.intro"
@@ -97,6 +100,11 @@
     <str id="JDKPathPanel.badVersion1" txt="O JDK escolhido tem versão não recomendada (Disponível: "/>
     <str id="JDKPathPanel.badVersion2" txt=" Necessário: "/>
     <str id="JDKPathPanel.badVersion3" txt="). Usar esse JDK mesmo assim?"/>
+	<str id="JDKPathPanel.nonValidPathInReg"
+         txt="O registro do Windows possui um caminho inválido para esta JDK. Deseja utilizar mesmo assim?"/>
+    <str id="JDKPathPanel.jdkDownload"
+         txt="&lt;html&gt;&lt;p&gt;Este software necessita da versão ${JDKPathPanel.minVersion} ou superior do Java Development Kit (JDK).&lt;p/&gt;
+         Se o mesmo não estiver instalado, favor efetuar o download através do link: &lt;a href='http://java.sun.com/javase/downloads/'&gt;http://java.sun.com/javase/downloads&lt;/a&gt; .&lt;/html&gt;"/>
 
     <str id="PacksPanel.info" txt="Selecione os pacotes que deseja instalar :"/>
     <str id="PacksPanel.tip" txt="Nota: pacotes cinzas são requeridos."/>
